@@ -1,6 +1,6 @@
-
-// You should implement your task here.
-
-module.exports = function towelSort (matrix) {
-  return matrix.flat().sort((a,b)=>a-b);
+function towelSort (matrix) {
+  for(rowIndex in matrix){
+    matrix[rowIndex].sort((a, b) => rowIndex % 2 === 0 ? a-b : b-a)
+  }
+ return matrix.flat()
 }
