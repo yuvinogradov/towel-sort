@@ -1,4 +1,4 @@
-function towelSort (mat) {
+module.exports = function towelSort (mat) {
 //     работает, но тест не проходит
     if(arguments.length ===0 ) return []
    for(let rowIndex in mat){
