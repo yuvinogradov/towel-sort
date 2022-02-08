@@ -1,6 +1,5 @@
 module.exports = function towelSort (mat) {
-//     работает, но тест не проходит
-    if(arguments.length ===0 ) return []
+   if(arguments.length ===0 ) return []
    for(let rowIndex in mat){
      mat[rowIndex].sort((a, b) => rowIndex % 2 === 0 ? a-b : b-a)
    }
